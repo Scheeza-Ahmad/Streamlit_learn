@@ -9,15 +9,32 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQMUS4m5gi_nNHSQH47yGtK2JHXtTOuVvrXlDTAbLPXA&s=10",width=200)
     st.write("BodyGuard")
-    st.button("Watch Now BodyGuard")
+    c1=st.button("Watch Now BodyGuard")
 with col2:
     st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5bI-rBvMcD7rQwx4pPsVm7UlJzOCRLCB6LPmHB7paJg&s=10",width=200)
     st.write("Sikandar")
-    st.button("Watch Now Sikandar")
+    c2=st.button("Watch Now Sikandar")
 
 with col3:
     st.image("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZQRe8toDDoZ2SwJHhUlqwTCgV3sK5RBVKGwZbI-l0-A&s=10",width=200)
     st.write("Kick")
-    st.button("Watch Now Kick")
+    c3=st.button("Watch Now Kick")
 
+if c1:
+     st.markdown(
+        '<meta http-equiv="refresh" content="0; url=https://www.youtube.com/watch?v=49I2G6VVrnw">',
+        unsafe_allow_html=True
+    )
+
+if c2:
+     st.markdown(
+        '<meta http-equiv="refresh" content="0; url=https://www.youtube.com/watch?v=dPNvBUmSrUE">',
+        unsafe_allow_html=True
+    )
+
+if c3:
+     st.markdown(
+        '<meta http-equiv="refresh" content="0; url=https://www.youtube.com/watch?v=zvMKRgwxWJ4">',
+        unsafe_allow_html=True
+    )
 
